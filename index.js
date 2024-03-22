@@ -74,9 +74,10 @@ function init() {
             message: questions[10]
         },
         {
-            type: 'input',
+            type: 'list',
+            message: questions[11],
             name: 'license',
-            message: questions[11]
+            choices: ['MIT', 'APACHE 2.0', "GLP 3.0", "BSD 3", "NONE"]
         },
         {
             type: 'input',
@@ -97,9 +98,6 @@ function init() {
     .then((data) => {
         writeToFile("README.md", data);
     })
-    
-    
-    
 }
 
 // Function call to initialize app

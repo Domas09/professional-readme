@@ -1,49 +1,48 @@
 function licenseChecker(license, licenses){
   if(license === "MIT"){
-    return licenses.mit
+    return licenses.mit;
   } else if(license === "APACHE 2.0"){
-    return licenses.apache
+    return licenses.apache;
   } else if(license === "GPL 3.0"){
-    return licenses.gpl
+    return licenses.gpl;
   } else if(license === "BSD 3"){
-    return licenses.bsd
-  } else if(license === false){
-    return false
-  }
+    return licenses.bsd;
+  } 
 }
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseLink(license) {
   const licenses = {
     mit: "[MIT](https://opensource.org/licenses/MIT)",
     apache: "[APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     gpl: "[GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
     bsd: "[BSD 3](https://opensource.org/licenses/BSD-3-Clause)"
   };
-  licenseChecker(license, licenses);
+  return licenseChecker(license, licenses);
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseBadge(license) {
   const licenses = {
     mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     apache: "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     gpl: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
     bsd:"[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
   };
-  licenseChecker(license, licenses);
+  return licenseChecker(license, licenses);
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(license === false){
+  if(license === "NONE"){
     return "";
   } else {
   return `## License
   
-  ${renderLicenseBadge(license)}${renderLicenseLink(license)}`
+${renderLicenseBadge(license)}
+${renderLicenseLink(license)}`
   }
 }
 
