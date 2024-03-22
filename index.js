@@ -16,24 +16,6 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    const data = {
-        title: "",
-        description: "",
-        motivation: "",
-        why: "",
-        problem: "",
-        learn: "",
-        installation: "",
-        instructions: "",
-        collab: "",
-        third: "",
-        tutorials: "",
-        license: false,
-        screenshot: "",
-        github: "",
-        gmail: ""
-    }
-
     inquirer
     .prompt([
         {
@@ -112,22 +94,7 @@ function init() {
             message: questions[14]
         },
     ])
-    .then((response) => {
-        data.title = response.title;
-        data.description = response.description;
-        data.motivation = response.motivation;
-        data.why = response.why;
-        data.problem = response.problem;
-        data.learn = response.learn;
-        data.installation = response.installation;
-        data.instructions = response.instructions;
-        data.collab = response.collab;
-        data.third = response.third;
-        data.tutorials = response.tutorials;
-        data.license = response.license;
-        data.screenshot = response.screenshot;
-        data.github = response.github;
-        data.gmail = response.gmail;
+    .then((data) => {
         writeToFile("README.md", data);
     })
     
