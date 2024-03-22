@@ -43,7 +43,7 @@ https://www.npmjs.com/package/inquirer/v/8.2.4?activeTab=readme#documentation , 
 
 ## Screenshot
 
-![screenshot](../professional-readme/img/Screenshot%20(16).png)
+![screenshot](../professional-readme/img/Screenshot(16).png)
 
 ## Questions
 

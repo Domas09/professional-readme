@@ -77,7 +77,7 @@ function init() {
             type: 'list',
             message: questions[11],
             name: 'license',
-            choices: ['MIT', 'APACHE 2.0', "GLP 3.0", "BSD 3", "NONE"]
+            choices: ['MIT', 'APACHE 2.0', "GPL 3.0", "BSD 3", "NONE"]
         },
         {
             type: 'input',
