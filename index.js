@@ -15,7 +15,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    let data = {
+    const data = {
         title: "",
         description: "",
         motivation: "",
@@ -43,11 +43,11 @@ function init() {
     ])
     .then((response) => {
         data.title = response.title;
+        writeToFile("README.md", data);
     })
     
     
     
-    writeToFile("README.md", data);
 }
 
 const questions = ["Project title", "Brief description of project", "What was your motivation", "Why did you build this project", "What problem does it solve?", "What did you learn?", "Installation directions", "Usage instructions", "Collaborators", "Third party assests", "Links to tutorials", "License", "Screenshot directory", "Github username", "Email"];
