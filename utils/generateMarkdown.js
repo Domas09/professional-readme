@@ -65,7 +65,7 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [How to Contribute](#howtocontribute)
+- [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Screenshot](#screenshot)
 - [Questions](#questions)
@@ -109,7 +109,7 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 - My contact info
 
-[GitHub](${data.github})
+[GitHub](https://github.com/${data.github})
 [Gmail](${data.gmail})
 
 `;
