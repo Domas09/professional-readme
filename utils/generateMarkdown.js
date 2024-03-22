@@ -65,7 +65,11 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-  
+- [How to Contribute](#howtocontribute)
+- [Tests](#tests)
+- [Screenshot](#screenshot)
+- [Questions](#questions)
+
 ## Installation
   
 ${data.installation}
@@ -75,11 +79,14 @@ ${data.installation}
 ${data.instructions}
   
 ## Credits
-  
+
+- Collaborators
 ${data.collab}
-  
+
+- Third-party assets
 ${data.third}
-  
+
+- Helpful Links Used
 ${data.tutorials}
   
 ${renderLicenseSection(data.license)}
@@ -96,12 +103,14 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 ## Screenshot
 
-${data.screenshot}
+![screenshot](${data.screenshot})
 
 ## Questions
 
-${data.github}
-${data.gmail}
+- My contact info
+
+[GitHub](${data.github})
+[Gmail](${data.gmail})
 
 `;
 }
