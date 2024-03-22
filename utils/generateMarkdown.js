@@ -7,7 +7,7 @@ function licenseChecker(license, licenses){
     return licenses.gpl
   } else if(license === "BSD 3"){
     return licenses.bsd
-  } else {
+  } else if(license === false){
     return false
   }
 }
@@ -15,10 +15,10 @@ function licenseChecker(license, licenses){
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const licenses = {
-    mit: "",
-    apache: "",
-    gpl: "",
-    bsd: ""
+    mit: "[MIT](https://opensource.org/licenses/MIT)",
+    apache: "[APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+    gpl: "[GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+    bsd: "[BSD 3](https://opensource.org/licenses/BSD-3-Clause)"
   };
   licenseChecker(license, licenses);
 }
