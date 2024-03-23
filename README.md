@@ -25,6 +25,8 @@ Copy the code whichever way is best for you. Then once launched in your choice o
 ## Usage
   
 In your source-code editor's terminal run the node index.js command and respond to the prompts as you see fit. The results will be in the generate folder in this program.
+
+- [tutorial-video](https://drive.google.com/file/d/1G4FMBoCQpA5k1vk6SLeC9pBC4xJzUTfx/view?pli=1)
   
 ## Credits
 
