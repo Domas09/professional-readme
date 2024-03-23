@@ -14,8 +14,8 @@ function licenseChecker(license, licenses){
 function renderLicenseLink(license) {
   const licenses = {
     mit: "[MIT](https://opensource.org/licenses/MIT)",
-    apache: "[APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-    gpl: "[GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+    apache: "[APACHE 2.0](https://opensource.org/licenses/Apache-2.0)",
+    gpl: "[GPL 3.0](https://www.gnu.org/licenses/gpl-3.0)",
     bsd: "[BSD 3](https://opensource.org/licenses/BSD-3-Clause)"
   };
   return licenseChecker(license, licenses);
